@@ -1,3 +1,5 @@
+import { ImageIcon } from 'lucide-react'
+
 export function GalleryGrid() {
   const galleryItems = [
     {
@@ -52,12 +54,10 @@ export function GalleryGrid() {
               className="group rounded-lg overflow-hidden bg-white border border-border-gray hover:shadow-xl transition-shadow duration-300"
             >
               {/* Image Placeholder - Ready for user images */}
-              <div className="relative w-full aspect-video bg-light-gray flex items-center justify-center overflow-hidden">
-                <div className="text-center p-6">
-                  <div className="text-4xl mb-2">📷</div>
-                  <p className="text-charcoal/50 text-sm">
-                    {item.category}
-                  </p>
+              <div className="relative w-full aspect-video bg-champagne/20 flex items-center justify-center overflow-hidden">
+                <div className="flex flex-col items-center gap-2 p-6 text-royal-blue/30">
+                  <ImageIcon className="h-9 w-9" strokeWidth={1.5} aria-hidden="true" />
+                  <p className="text-charcoal/50 text-sm">{item.category}</p>
                 </div>
               </div>
 
