@@ -4,9 +4,15 @@ export function ContactSection() {
   return (
     <section id="contact" className="py-16 md:py-24 bg-cream">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-royal-blue mb-12 text-center">
-          Visit or Contact the Studio
-        </h2>
+        <div className="text-center mb-12">
+          <p className="text-xs font-bold tracking-widest text-[#E8A020] uppercase mb-3">We&apos;d Love to See You</p>
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-charcoal">
+            Visit or Contact the Studio
+          </h2>
+          <p className="mt-4 text-charcoal/60 max-w-lg mx-auto">
+            Drop in for passport photos and Western Union any day. Call or WhatsApp to book weddings, Jago, or bridal appointments.
+          </p>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           {/* Left Column: Contact Information */}
@@ -63,30 +69,15 @@ export function ContactSection() {
             <div className="w-full bg-white rounded-lg overflow-hidden border-[0.5px] border-royal-blue shadow-lg">
               {/* 16:9 Aspect Ratio Container */}
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                <div className="absolute inset-0 flex items-center justify-center bg-light-gray">
-                  <div className="text-center p-8">
-                    <p className="text-charcoal/60 text-lg font-medium">
-                      Google Maps Embed
-                    </p>
-                    <p className="text-charcoal/40 text-sm mt-2">
-                      112-2580 Cedar Park Pl, Abbotsford, BC V2T 3S5
-                    </p>
-                    <p className="text-charcoal/30 text-xs mt-4">
-                      (Your custom Google Maps iframe will be embedded here)
-                    </p>
-                  </div>
-                </div>
-                {/* 
-                  User can replace the above div content with their own Google Maps embed iframe:
-                  <iframe 
-                    src="https://www.google.com/maps/embed?pb=..." 
-                    width="100%" 
-                    height="100%" 
-                    style="border:0;" 
-                    allowFullScreen="" 
-                    loading="lazy"
-                  ></iframe>
-                */}
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.573!2d-122.3012!3d49.0504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d9a9b8a3!2s2580+Cedar+Park+Pl%2C+Abbotsford%2C+BC+V2T+3S5!5e0!3m2!1sen!2sca!4v1"
+                  className="absolute inset-0 w-full h-full"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Linkin Photo & Video Studio — 2580 Cedar Park Pl, Abbotsford BC"
+                ></iframe>
               </div>
             </div>
           </div>

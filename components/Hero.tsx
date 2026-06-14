@@ -1,163 +1,137 @@
+import Link from 'next/link'
+
 export function Hero() {
   return (
-    <section className="py-8 md:py-16 bg-cream">
+    <section className="bg-cream">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-0 md:gap-0 items-stretch min-h-[600px] md:min-h-[700px]">
-          {/* Left Column: Main Headline & Info */}
-          <div className="bg-cream p-8 md:p-12 lg:p-16 flex flex-col justify-between">
-            <div className="space-y-8">
-              {/* Studio Tagline */}
+        <div className="grid md:grid-cols-2 items-stretch min-h-[620px] md:min-h-[680px]">
+
+          {/* Left Column: Identity & Headline */}
+          <div className="py-12 md:py-16 lg:py-20 pr-0 md:pr-12 flex flex-col justify-between">
+            <div className="space-y-7">
+
+              {/* Community tag */}
               <div className="flex items-center gap-3">
-                <div className="w-1 h-12 bg-champagne"></div>
-                <div className="text-sm font-semibold text-champagne tracking-widest">
-                  LINKIN STUDIO
-                </div>
+                <div className="w-8 h-[2px] bg-[#E8A020]"></div>
+                <p className="text-xs font-bold tracking-widest text-[#E8A020] uppercase">
+                  Abbotsford&apos;s Community Studio
+                </p>
               </div>
 
-              {/* Main Headline */}
-              <div>
-                <h1 className="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold text-charcoal leading-tight mb-4">
-                  Your Wedding,
-                  <br />
-                  <span className="text-champagne">Beautifully Told.</span>
-                </h1>
-              </div>
+              {/* Main headline */}
+              <h1 className="font-playfair text-5xl md:text-6xl lg:text-[68px] font-bold text-charcoal leading-[1.05] tracking-tight">
+                Everything<br />
+                your family<br />
+                needs,{' '}
+                <span className="text-[#E8A020]">one address.</span>
+              </h1>
 
-              {/* Supporting Text */}
-              <p className="text-lg md:text-xl text-charcoal/80 leading-relaxed max-w-lg">
-                Professional wedding films, photography, bridal wear, and accessories—everything you need for your perfect day, all in one studio.
+              {/* Supporting copy */}
+              <p className="text-base md:text-lg text-charcoal/70 leading-relaxed max-w-md">
+                Passport photos in minutes. Send money home with Western Union. Wedding films, Jago rentals, Indian jewellery, Gurbani radios — all under one roof, serving the Fraser Valley South Asian community.
               </p>
 
-              {/* Key Info */}
-              <div className="space-y-3 pt-4 border-t border-border-gray">
-                <div className="flex items-center gap-3">
-                  <span className="text-champagne font-semibold">📍</span>
-                  <p className="text-charcoal text-sm">112-2580 Cedar Park Pl, Abbotsford, BC</p>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="text-champagne font-semibold">🕐</span>
-                  <p className="text-charcoal text-sm">Mon–Fri 10am–7pm • Sat–Sun 11am–6:30pm</p>
-                </div>
+              {/* Language tags */}
+              <div className="flex items-center gap-3 flex-wrap">
+                <span className="px-3 py-1.5 border border-border-gray rounded-full text-sm text-charcoal/70 font-medium">English</span>
+                <span className="px-3 py-1.5 border border-border-gray rounded-full text-sm text-charcoal/70 font-medium">ਪੰਜਾਬੀ</span>
+                <span className="px-3 py-1.5 border border-border-gray rounded-full text-sm text-charcoal/70 font-medium">हिंदी</span>
+                <span className="text-xs text-charcoal/40 font-medium">Open 7 days</span>
               </div>
 
               {/* CTAs */}
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <a
                   href="tel:604-864-4999"
-                  className="px-8 py-4 bg-royal-blue text-cream rounded-lg hover:bg-royal-blue/90 transition-colors font-semibold text-center"
+                  className="px-7 py-3.5 bg-royal-blue text-cream rounded-lg hover:bg-royal-blue/90 transition-colors font-semibold text-center text-sm"
                 >
-                  Call Now
+                  Call 604-864-4999
                 </a>
                 <a
                   href="https://wa.me/17785397039"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-8 py-4 border-2 border-royal-blue text-royal-blue rounded-lg hover:bg-royal-blue hover:text-cream transition-colors font-semibold text-center"
+                  className="px-7 py-3.5 border-2 border-royal-blue text-royal-blue rounded-lg hover:bg-royal-blue hover:text-cream transition-colors font-semibold text-center text-sm"
                 >
-                  Message on WhatsApp
+                  WhatsApp Us
                 </a>
               </div>
             </div>
+
+            {/* Tagline at bottom */}
+            <p className="mt-10 text-sm text-charcoal/40 italic font-medium">
+              &ldquo;Trust professional to save you memories!&rdquo; — Namdeep Sidhu
+            </p>
           </div>
 
-          {/* Right Column: Dark Services Panel */}
-          <div className="bg-royal-blue p-8 md:p-12 lg:p-16 flex flex-col justify-between">
-            <div className="space-y-8">
-              {/* Section Header */}
-              <div>
-                <h2 className="text-sm font-bold text-champagne tracking-widest mb-2">
-                  WHAT WE OFFER
-                </h2>
-                <h3 className="font-playfair text-3xl md:text-4xl font-bold text-cream">
-                  Complete Wedding Services
-                </h3>
-              </div>
+          {/* Right Column: Dark Walk-In + Services Panel */}
+          <div className="bg-[#1a2744] py-12 md:py-16 lg:py-20 px-8 md:px-10 lg:px-12 flex flex-col gap-8">
 
-              {/* Service Cards */}
-              <div className="space-y-5">
-                {/* Wedding Films */}
+            {/* Walk In Today */}
+            <div>
+              <p className="text-xs font-bold tracking-widest text-[#E8A020] uppercase mb-4">Walk In Today</p>
+              <div className="grid grid-cols-2 gap-3">
                 <a
-                  href="/wedding-films"
-                  className="group block p-5 bg-white/10 hover:bg-white/15 rounded-lg border border-cream/20 transition-all hover:border-champagne"
+                  href="/#passport-photos"
+                  className="group p-4 bg-white/10 hover:bg-white/15 rounded-xl border border-white/10 hover:border-[#E8A020]/50 transition-all"
                 >
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-cream mb-2 group-hover:text-champagne transition-colors">
-                        Wedding Films
-                      </h4>
-                      <p className="text-cream/80 text-sm">
-                        Cinematic videos capturing your moments
-                      </p>
-                    </div>
-                    <span className="text-champagne text-xl flex-shrink-0">🎬</span>
+                  <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center mb-3">
+                    <svg className="w-4 h-4 text-cream" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><circle cx="12" cy="10" r="3" strokeWidth="2"/><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 21v-1a5 5 0 0110 0v1"/></svg>
                   </div>
+                  <p className="font-semibold text-cream text-sm group-hover:text-[#E8A020] transition-colors">Passport photos</p>
+                  <p className="text-cream/60 text-xs mt-1">Adults &amp; infants — ready in minutes</p>
                 </a>
-
-                {/* Photography */}
                 <a
-                  href="/photography"
-                  className="group block p-5 bg-white/10 hover:bg-white/15 rounded-lg border border-cream/20 transition-all hover:border-champagne"
+                  href="/#western-union"
+                  className="group p-4 bg-white/10 hover:bg-white/15 rounded-xl border border-white/10 hover:border-[#E8A020]/50 transition-all"
                 >
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-cream mb-2 group-hover:text-champagne transition-colors">
-                        Photography
-                      </h4>
-                      <p className="text-cream/80 text-sm">
-                        Timeless portraits and candid moments
-                      </p>
-                    </div>
-                    <span className="text-champagne text-xl flex-shrink-0">📷</span>
+                  <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center mb-3">
+                    <svg className="w-4 h-4 text-cream" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                   </div>
-                </a>
-
-                {/* Bridal Wear */}
-                <a
-                  href="/bridal-wear"
-                  className="group block p-5 bg-white/10 hover:bg-white/15 rounded-lg border border-cream/20 transition-all hover:border-champagne"
-                >
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-cream mb-2 group-hover:text-champagne transition-colors">
-                        Bridal Wear
-                      </h4>
-                      <p className="text-cream/80 text-sm">
-                        Exquisite wedding dresses
-                      </p>
-                    </div>
-                    <span className="text-champagne text-xl flex-shrink-0">👗</span>
-                  </div>
-                </a>
-
-                {/* Accessories */}
-                <a
-                  href="/accessories"
-                  className="group block p-5 bg-white/10 hover:bg-white/15 rounded-lg border border-cream/20 transition-all hover:border-champagne"
-                >
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-cream mb-2 group-hover:text-champagne transition-colors">
-                        Accessories
-                      </h4>
-                      <p className="text-cream/80 text-sm">
-                        Jewelry and wedding accessories
-                      </p>
-                    </div>
-                    <span className="text-champagne text-xl flex-shrink-0">✨</span>
-                  </div>
+                  <p className="font-semibold text-cream text-sm group-hover:text-[#E8A020] transition-colors">Western Union</p>
+                  <p className="text-cream/60 text-xs mt-1">Send money home — open every day</p>
                 </a>
               </div>
             </div>
 
-            {/* Bottom CTA */}
-            <a
-              href="#gallery"
-              className="text-champagne hover:text-cream transition-colors flex items-center gap-2 pt-8 border-t border-cream/20 font-semibold text-sm"
+            {/* All Services */}
+            <div className="flex-1">
+              <p className="text-xs font-bold tracking-widest text-cream/50 uppercase mb-4">All Services</p>
+              <div className="space-y-1">
+                {[
+                  { label: 'Wedding photography & videography', href: '/photography', badge: 'Book' },
+                  { label: 'Jago rental & decoration', href: '/accessories', badge: 'Enquire' },
+                  { label: 'Indian jewellery & bangles', href: '/accessories', badge: null },
+                  { label: 'Gurbani radios', href: '/#gurbani', badge: null },
+                  { label: 'IPTV boxes', href: '/#iptv', badge: null },
+                  { label: 'VHS & tape to digital transfer', href: '/#media-transfer', badge: null },
+                ].map((item) => (
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    className="group flex items-center justify-between py-2.5 px-3 rounded-lg hover:bg-white/10 transition-colors"
+                  >
+                    <span className="text-cream/80 group-hover:text-cream text-sm transition-colors">{item.label}</span>
+                    {item.badge && (
+                      <span className="text-xs font-semibold px-2.5 py-0.5 bg-[#E8A020] text-[#1a2744] rounded-full flex-shrink-0">
+                        {item.badge}
+                      </span>
+                    )}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Gallery CTA */}
+            <Link
+              href="/gallery"
+              className="flex items-center justify-between pt-6 border-t border-white/10 text-[#E8A020] hover:text-cream transition-colors font-semibold text-sm"
             >
-              See Our Gallery
-              <span>→</span>
-            </a>
+              <span>View our portfolio</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+            </Link>
           </div>
+
         </div>
       </div>
     </section>
