@@ -10,7 +10,6 @@ export default function AccessoriesPage() {
       <ServiceHero
         title="Beautiful Wedding Accessories"
         description="Exquisite jewelry and accessories to complete your bridal look. From delicate necklaces to elegant hair pieces, find the perfect finishing touches."
-        icon="✨"
       />
 
       <AccessoryCollectionSection />

@@ -10,7 +10,6 @@ export default function WeddingFilmsPage() {
       <ServiceHero
         title="Professional Wedding Films"
         description="Cinematic videos capturing every precious moment of your special day. From emotional vows to joyful celebrations, we craft timeless films you'll cherish forever."
-        icon="🎬"
       />
 
       <WeddingVideographySection />

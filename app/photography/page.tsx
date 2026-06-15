@@ -10,7 +10,6 @@ export default function PhotographyPage() {
       <ServiceHero
         title="Timeless Wedding Photography"
         description="Stunning portraits and candid moments that capture the essence of your love story. Artistic compositions and authentic emotions preserved forever."
-        icon="📷"
       />
 
       <PhotographyServicesSection />
