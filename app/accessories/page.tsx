@@ -1,6 +1,6 @@
 import { Header } from '@/components/Header'
 import { ServiceHero } from '@/components/ServiceHero'
-import { ServiceCard } from '@/components/ServiceCard'
+import { AccessoryCollectionSection } from '@/components/AccessoryCollectionSection'
 import { GlassmorphismFooter } from '@/components/GlassmorphismFooter'
 
 export default function AccessoriesPage() {
@@ -13,43 +13,7 @@ export default function AccessoriesPage() {
         icon="✨"
       />
 
-      <section className="max-w-7xl mx-auto px-6 py-20">
-        <h2 className="font-heading text-4xl font-bold text-royal-blue text-center mb-12">
-          Our Accessory Collection
-        </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <ServiceCard
-            icon="💎"
-            title="Bridal Jewelry"
-            description="Stunning necklaces, bracelets, and earrings to complement your gown. Elegant pieces crafted to enhance your natural beauty."
-          />
-          <ServiceCard
-            icon="👑"
-            title="Hair Accessories"
-            description="Beautiful tiaras, hair combs, and clips to complete your hairstyle. Delicate pieces designed to blend seamlessly with your look."
-          />
-          <ServiceCard
-            icon="🎀"
-            title="Veils & Wraps"
-            description="Romantic veils and elegant wraps in various lengths and styles. Frame your face beautifully and add drama to your entrance."
-          />
-          <ServiceCard
-            icon="👞"
-            title="Wedding Shoes"
-            description="Comfortable and stylish bridal shoes designed for all-day wear. From classic white to metallics, find your perfect pair."
-          />
-          <ServiceCard
-            icon="✋"
-            title="Gloves & Hosiery"
-            description="Delicate gloves, stockings, and hosiery to complete your ensemble. Premium fabrics that add sophistication and elegance."
-          />
-          <ServiceCard
-            icon="💼"
-            title="Accessory Styling"
-            description="Professional consultation to coordinate all your accessories. Expert guidance to create a cohesive, stunning bridal look."
-          />
-        </div>
-      </section>
+      <AccessoryCollectionSection />
 
       <section className="bg-royal-blue/5 py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
