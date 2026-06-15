@@ -1,6 +1,6 @@
 import { Header } from '@/components/Header'
 import { ServiceHero } from '@/components/ServiceHero'
-import { ServiceCard } from '@/components/ServiceCard'
+import { PhotographyServicesSection } from '@/components/PhotographyServicesSection'
 import { GlassmorphismFooter } from '@/components/GlassmorphismFooter'
 
 export default function PhotographyPage() {
@@ -13,43 +13,7 @@ export default function PhotographyPage() {
         icon="📷"
       />
 
-      <section className="max-w-7xl mx-auto px-6 py-20">
-        <h2 className="font-heading text-4xl font-bold text-royal-blue text-center mb-12">
-          Our Photography Services
-        </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <ServiceCard
-            icon="👰"
-            title="Bridal Portraits"
-            description="Elegant and flattering portraits showcasing your beauty. Professional styling, lighting, and posing for stunning images you'll treasure."
-          />
-          <ServiceCard
-            icon="💒"
-            title="Ceremony Coverage"
-            description="Emotional moments from the first look through the final kiss. Every tear, smile, and embrace documented with artistic precision."
-          />
-          <ServiceCard
-            icon="🎊"
-            title="Reception Candids"
-            description="Genuine celebrations, laughter, and joy captured throughout the evening. Spontaneous moments that tell the real story of your day."
-          />
-          <ServiceCard
-            icon="👫"
-            title="Couple Sessions"
-            description="Romantic couple portraits in your favorite locations. Intimate shots that celebrate your connection and create lasting memories."
-          />
-          <ServiceCard
-            icon="🎨"
-            title="Artistic Editing"
-            description="Professional color correction, retouching, and enhancement. Your photos receive a timeless, polished look that stands the test of time."
-          />
-          <ServiceCard
-            icon="📚"
-            title="Album Design"
-            description="Custom-designed albums with premium printing. Display your favorite moments in a beautifully bound keepsake for your home."
-          />
-        </div>
-      </section>
+      <PhotographyServicesSection />
 
       <section className="bg-royal-blue/5 py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">

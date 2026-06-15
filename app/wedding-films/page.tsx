@@ -1,6 +1,6 @@
 import { Header } from '@/components/Header'
 import { ServiceHero } from '@/components/ServiceHero'
-import { ServiceCard } from '@/components/ServiceCard'
+import { WeddingVideographySection } from '@/components/WeddingVideographySection'
 import { GlassmorphismFooter } from '@/components/GlassmorphismFooter'
 
 export default function WeddingFilmsPage() {
@@ -13,43 +13,7 @@ export default function WeddingFilmsPage() {
         icon="🎬"
       />
 
-      <section className="max-w-7xl mx-auto px-6 py-20">
-        <h2 className="font-heading text-4xl font-bold text-royal-blue text-center mb-12">
-          Our Wedding Film Services
-        </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <ServiceCard
-            icon="🎥"
-            title="Full Day Coverage"
-            description="Complete documentation from getting ready through the reception. Capture every meaningful moment and detail of your wedding day."
-          />
-          <ServiceCard
-            icon="✨"
-            title="Cinematic Editing"
-            description="Professional color grading, transitions, and music synchronization. Your film is crafted like a Hollywood production designed just for you."
-          />
-          <ServiceCard
-            icon="🎞️"
-            title="Highlight Reel"
-            description="A beautifully edited 3–5 minute highlight video. Perfect for sharing with family and friends who couldn't attend your celebration."
-          />
-          <ServiceCard
-            icon="📹"
-            title="Aerial Shots"
-            description="Stunning drone footage showcasing your venue and celebration from unique perspectives. Add cinematic scale to your wedding story."
-          />
-          <ServiceCard
-            icon="🎵"
-            title="Music Curation"
-            description="Personalized soundtrack selection that perfectly complements your film. Every beat enhances the emotional journey of your day."
-          />
-          <ServiceCard
-            icon="💿"
-            title="Final Delivery"
-            description="Your finished wedding film delivered in multiple formats. Enjoy unlimited copies, digital sharing, and forever preservation."
-          />
-        </div>
-      </section>
+      <WeddingVideographySection />
 
       <section className="bg-royal-blue/5 py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
