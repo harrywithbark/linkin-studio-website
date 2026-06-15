@@ -4,10 +4,10 @@ export function Hero() {
   return (
     <section className="bg-cream">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 items-stretch min-h-[620px] md:min-h-[680px]">
+        <div className="grid md:grid-cols-2 items-stretch min-h-screen md:min-h-[680px]">
 
-          {/* Left Column: Identity & Headline */}
-          <div className="py-12 md:py-16 lg:py-20 pr-0 md:pr-12 flex flex-col justify-between">
+          {/* Left Column: Content */}
+          <div className="py-12 md:py-16 lg:py-20 pr-0 md:pr-12 flex flex-col justify-between min-h-[600px] md:min-h-auto">
             <div className="space-y-7">
 
               {/* Community tag */}
@@ -19,7 +19,7 @@ export function Hero() {
               </div>
 
               {/* Main headline */}
-              <h1 className="font-playfair text-5xl md:text-6xl lg:text-[68px] font-bold text-charcoal leading-[1.05] tracking-tight">
+              <h1 className="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-[68px] font-bold text-charcoal leading-[1.05] tracking-tight">
                 Everything<br />
                 your family<br />
                 needs,{' '}
@@ -27,8 +27,8 @@ export function Hero() {
               </h1>
 
               {/* Supporting copy */}
-              <p className="text-base md:text-lg text-charcoal/70 leading-relaxed max-w-md">
-                Passport photos in minutes. Send money home with Western Union. Wedding films, Jago rentals, Indian jewellery, Gurbani radios — all under one roof, serving the Fraser Valley South Asian community.
+              <p className="text-sm md:text-base lg:text-lg text-charcoal/70 leading-relaxed max-w-md">
+                Passport photos, wedding films, bridal wear, jewellery, Jago rentals, Gurbani radios — all under one roof, serving the Fraser Valley South Asian community.
               </p>
 
               {/* Language tags */}
@@ -64,8 +64,8 @@ export function Hero() {
             </p>
           </div>
 
-          {/* Right Column: Dark Walk-In + Services Panel */}
-          <div className="bg-[#1a2744] py-12 md:py-16 lg:py-20 px-8 md:px-10 lg:px-12 flex flex-col gap-8">
+          {/* Right Column: Services Panel - Hidden on Mobile */}
+          <div className="hidden md:flex bg-[#1a2744] py-16 lg:py-20 px-8 md:px-10 lg:px-12 flex-col gap-8">
 
             {/* Walk In Today */}
             <div>
