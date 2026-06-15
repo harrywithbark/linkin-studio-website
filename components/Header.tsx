@@ -1,13 +1,28 @@
 'use client'
 
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const headerRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const update = () => {
+      if (headerRef.current) {
+        document.documentElement.style.setProperty(
+          '--header-h',
+          `${headerRef.current.offsetHeight}px`
+        )
+      }
+    }
+    update()
+    window.addEventListener('resize', update)
+    return () => window.removeEventListener('resize', update)
+  }, [])
 
   return (
-    <header className="sticky top-0 z-50">
+    <header ref={headerRef} className="sticky top-0 z-50">
       {/* Info Bar */}
       <div className="bg-royal-blue text-cream text-xs md:text-sm">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-2">

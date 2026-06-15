@@ -2,12 +2,12 @@ import Link from 'next/link'
 
 export function Hero() {
   return (
-    <section className="bg-cream">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 items-stretch min-h-[620px] md:min-h-[680px]">
+    <section className="bg-cream flex flex-col" style={{ minHeight: 'calc(100dvh - var(--header-h, 88px))' }}>
+      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex-1 flex flex-col">
+        <div className="grid md:grid-cols-2 items-stretch flex-1">
 
           {/* Left Column: Identity & Headline */}
-          <div className="py-12 md:py-16 lg:py-20 pr-0 md:pr-12 flex flex-col justify-between">
+          <div className="py-8 md:py-10 lg:py-12 pr-0 md:pr-12 flex flex-col justify-between">
             <div className="space-y-7">
 
               {/* Community tag */}
@@ -65,7 +65,7 @@ export function Hero() {
           </div>
 
           {/* Right Column: Dark Walk-In + Services Panel */}
-          <div className="bg-[#1a2744] py-12 md:py-16 lg:py-20 px-8 md:px-10 lg:px-12 flex flex-col gap-8">
+          <div className="bg-[#1a2744] py-8 md:py-10 lg:py-12 px-8 md:px-10 lg:px-12 flex flex-col gap-6">
 
             {/* Walk In Today */}
             <div>
