@@ -42,7 +42,6 @@ export function GlassmorphismFooter() {
               {[
                 { label: 'Wedding Films', href: '/wedding-films' },
                 { label: 'Photography', href: '/photography' },
-                { label: 'Bridal Wear', href: '/bridal-wear' },
                 { label: 'Accessories', href: '/accessories' },
                 { label: 'Passport Photos', href: '/#passport-photos' },
                 { label: 'Western Union', href: '/#western-union' },
