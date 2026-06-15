@@ -23,13 +23,6 @@ const services = [
     category: 'Wedding & Event',
   },
   {
-    title: 'Bridal Wear',
-    description: 'Exquisite wedding lehengas, salwar suits, and bridal gowns. Curated selection for brides who want to look and feel extraordinary.',
-    href: '/bridal-wear',
-    badge: null,
-    category: 'Wedding & Event',
-  },
-  {
     title: 'Indian Jewellery & Bangles',
     description: 'Stunning bridal jewellery sets, bangles, and accessories. Beautiful pieces for weddings, Vaisakhi, Diwali, and everyday wear.',
     href: '/accessories',

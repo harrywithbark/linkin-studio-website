@@ -78,7 +78,6 @@ export function Header() {
                 <Link href="/wedding-films" className="block px-4 py-2 text-charcoal hover:bg-cream hover:text-royal-blue transition-colors text-sm">Wedding Films</Link>
                 <Link href="/photography" className="block px-4 py-2 text-charcoal hover:bg-cream hover:text-royal-blue transition-colors text-sm">Photography</Link>
                 <div className="px-3 py-1.5 text-xs font-bold text-royal-blue/50 uppercase tracking-widest mt-1 border-t border-border-gray">Bridal</div>
-                <Link href="/bridal-wear" className="block px-4 py-2 text-charcoal hover:bg-cream hover:text-royal-blue transition-colors text-sm">Bridal Wear</Link>
                 <Link href="/accessories" className="block px-4 py-2 text-charcoal hover:bg-cream hover:text-royal-blue transition-colors text-sm">Accessories</Link>
                 <div className="px-3 py-1.5 text-xs font-bold text-royal-blue/50 uppercase tracking-widest mt-1 border-t border-border-gray">Walk-In Services</div>
                 <Link href="/#passport-photos" className="block px-4 py-2 text-charcoal hover:bg-cream hover:text-royal-blue transition-colors text-sm">Passport Photos</Link>
@@ -126,7 +125,6 @@ export function Header() {
               </div>
               <div className="py-2 px-3">
                 <p className="text-xs font-bold text-royal-blue/50 uppercase tracking-widest mb-2">Bridal</p>
-                <Link href="/bridal-wear" className="block py-1.5 pl-3 text-charcoal hover:text-royal-blue transition-colors" onClick={() => setIsMenuOpen(false)}>Bridal Wear</Link>
                 <Link href="/accessories" className="block py-1.5 pl-3 text-charcoal hover:text-royal-blue transition-colors" onClick={() => setIsMenuOpen(false)}>Accessories</Link>
               </div>
               <div className="py-2 px-3">
